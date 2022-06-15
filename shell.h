@@ -77,16 +77,5 @@ void print_error(vars_t *vars, char *msg);
 void _puts2(char *str);
 char *_uitoa(unsigned int count);
 
-void cd_dot(data_shell *datash);
-void cd_to(data_shell *datash);
-void cd_previous(data_shell *datash);
-void cd_to_home(data_shell *datash);
-int cd_shell(data_shell *datash);
-
-void check_env(r_var **h, char *in, data_shell *data);
-int check_vars(r_var **h, char *in, char *st, data_shell *data);
-char *replaced_input(r_var **head, char *input, char *new_input, int nlen);
-char *rep_var(char *input, data_shell *datash);
-
 
 #endif /* _SHELL_H_ */
